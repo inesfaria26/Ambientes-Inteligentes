@@ -1,0 +1,70 @@
+version:  '3.1'
+
+intents:
+- saudacao
+- inicial
+- objetivo1
+- objetivo2
+- idade
+- sexo
+- saturacaoO2
+- frequencia
+- tratamento
+#- tratamento_comp
+- informar_cidade1
+- informar_cidade2
+- despedida
+- bot_challenge
+
+responses:
+  utter_saudacao:
+    - text: Bem-vindo ao AsthmaCareBot! Tudo bem?
+
+  utter_inicial:
+    - text: O que posso ajudar? Todas as informações serão guardadas de forma a manter a confidencialidade.
+
+  utter_idade:
+    - text: Qual é a sua idade?
+
+  utter_sexo:
+    - text: Qual é o seu sexo?
+
+  utter_saturacao:
+    - text: Qual é o último valor de saturação de oxigénio que retirou?
+
+  utter_frequencia:
+    - text: Qual é o último valor de frequência cardíaca que retirou?
+
+  utter_tratamento:
+    - text: Insira o seu tratamento para a doença da asma.
+
+  utter_cidade1:
+    - text: Qual é a longitude da sua cidade?
+
+  utter_cidade2:
+    - text: Qual é a latitude da sua cidade?
+
+  utter_despedida:
+    - text: Espero ter ajudado! Até breve!
+
+  utter_iamabot:
+    - text: I am a bot, powered by Rasa.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- utter_inicial
+- utter_saudacao
+- utter_idade
+- utter_sexo
+- utter_saturacao
+- utter_frequencia
+- utter_tratamento
+- action_tratamento_complementar
+- utter_cidade1
+- utter_cidade2
+- action_qualidade_ar
+- utter_despedida
+- utter_iamabot

@@ -1,0 +1,111 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - Olá!
+    - Bom dia!
+    - Boa tarde!
+    - Boa noite!
+
+- intent: inicial
+  examples: | 
+    - estou preocupad@ com a minha doença, o que posso fazer para melhorar além dos tratamentos?
+    - quero informações sobre a qualidade do ar na minha cidade hoje. 
+
+- intent: objetivo1
+  examples: |
+    - querer tratamento complementar.
+    - quero tratamento complementar.
+
+- intent: objetivo2
+  examples: |
+    - informar sobre a qualidade do ar.
+    - avisar sobre a qualidade do ar.
+
+- intent: idade
+  examples: |
+    - eu tenho [12] anos
+    - tenho [60] anos
+    - tenho [48] anos
+    - tenho [27] anos
+    - tenho [20] anos
+    - tenho [43] anos
+    - [25]
+- intent: sexo
+  examples: |
+    - sou do sexo [masculino]
+    - sexo [feminino]
+    - o meu sexo é [feminino]
+    - sou do sexo [masculino]
+    - sexo [masculino]
+    - o meu sexo é [feminino]
+    - [masculino]
+    - [feminino]
+- intent: saturacaoO2
+  examples: | 
+    - a minha saturação de oxigénio é [99]  %.
+    - a minha saturação de oxigénio é [77]  %.
+    - a minha saturação de oxigénio é [90]  %.
+    - a minha saturação de oxigénio é [98]  %.
+    - a minha saturação de oxigénio é [100]  %.
+    - a minha saturação de oxigénio é [86]  %.
+
+- intent: frequencia
+  examples: | 
+    - a minha frequência cardíaca é [60]  bpm.
+    - a minha frequência cardíaca é [64]  bpm.
+    - a minha frequência cardíaca é [70]  bpm.
+    - a minha frequência cardíaca é [80]  bpm.
+    - a minha frequência cardíaca é [90]  bpm.
+    - a minha frequência cardíaca é [110]  bpm.
+
+- intent: tratamento
+  examples: |
+    - o meu tratamento é [broncodilatador].
+    - o meu tratamento é [corticoides].
+    - o meu tratamento é [modificador de leucotrienos].
+    - o meu tratamento é [estabilizador de mastócitos].
+    - o meu tratamento é [metilxantina].
+    - o meu tratamento é [imunomodulador].
+
+#- intent: tratamento_comp
+#  examples: |
+#    - o tratamento é [chá de cidreira]
+#    - o tratamento é [chá verde].
+
+- intent: informar_cidade1
+  examples: |
+    - A longitude da minha cidade é [80].
+    - [20].
+
+- intent: informar_cidade2
+  examples: |
+    - A latitude da minha cidade é [80].
+    - [20].
+
+- intent: despedida
+  examples: |
+    - Obrigado pela ajuda!
+    - Obrigado!
+    - Xau!
+    - Adeus!
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+#- synonym: querer
+#  examples:
+#    - quero
+#    - preciso
+#    - queria
+
+#- synonym: informar
+#  examples:
+#    - informo
+#    - avisar
+#    - aviso

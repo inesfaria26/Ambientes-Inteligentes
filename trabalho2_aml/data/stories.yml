@@ -1,0 +1,48 @@
+version: "3.1"
+stories:
+- story: hello
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- story: interactive_story_1
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: inicial
+  - action: utter_inicial
+  - intent: objetivo1
+  - action: utter_idade
+  - intent: idade
+  - action: utter_sexo
+  - intent: sexo
+  - action: utter_saturacao
+  - intent: saturacaoO2
+  - action: utter_frequencia
+  - intent: frequencia
+  - action: utter_tratamento
+  - intent: tratamento
+  - action: action_tratamento_complementar
+  #- intent: tratamento_comp
+  - intent: despedida
+  - action: utter_despedida
+
+- story: interactive_story_2
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: inicial
+  - action: utter_inicial
+  - intent: objetivo2
+  - action: utter_cidade1
+  - intent: informar_cidade1
+  - action: utter_cidade2
+  - intent: informar_cidade2
+  - action: action_qualidade_ar
+  - intent: despedida
+  - action: utter_despedida
+
+- story: good bye
+  steps:
+  - intent: despedida
+  - action: utter_despedida
